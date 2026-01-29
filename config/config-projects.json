@@ -1,0 +1,103 @@
+[
+  {
+    "projectId": "FracturedSoul",
+    "title": "Fractured Soul",
+    "body": [
+      "I co-founded a small indie game development studio called Endgame Studios, and our flagship product was Fractured Soul – it's like Mega Man except played across two screens at once.",
+      "<iframe title='Fractured Soul (60 FPS Steam trailer)' width='625' height='352' src='https://www.youtube.com/embed/ygN4ZY71klc?feature=oembed' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+      "The idea for Fractured Soul came to us with the announcement of the Nintendo DS in 2004. Nick and I had been playing <a href='https://en.wikipedia.org/wiki/Ikaruga'>Ikaruga</a> on the GameCube, and the duality nature of it made a natural fit for a dual screen console like Nintendo DS. Given our experience with making and playing platform games, we wondered whether a duality platformer could work. We threw together a very simple prototype and we knew we were onto something.",
+      "From that concept, it took almost 8 years for the full game to finally see the light of day in late 2012. Kotaku published an <a href='https://kotaku.com/the-game-that-took-eight-years-to-make-506972309'>article</a> about the almost decade long struggle to get the game out there.",
+      "Originally developed for Nintendo DS, it eventually first launched on Nintendo 3DS eShop in 2012, and we ported it to PC and released it on <a href='https://store.steampowered.com/app/307030/Fractured_Soul/'>Steam</a> in 2014.",
+      "The professional and user reviews were very rewarding: <a href='https://www.destructoid.com/review-fractured-soul-pc--271612.phtml'>Destructoid</a> described it as a \"wonderfully raw retro experience\" (8 / 10). <a href='http://www.nintendoworldreport.com/review/31615/fractured-soul-nintendo-3ds'>NintendoWorldReport</a> said it was a \"superb and fairly extensive collection of clever, interesting, and devious platforming ideas\" (8.5 / 10). <a href='http://www.nintendolife.com/reviews/eshop/fractured_soul'>NintendoLife</a> scored it 8 out of 10. We tracked over 50 professional reviews of the game and the average score was over 80%, which was extremely gratifying for all those years of hard work."
+    ]
+  },
+  {
+    "projectId": "Niah",
+    "title": "Niah Text Filter",
+    "body": [
+      "An extension for Visual Studio that filters debug output, rated 5 stars on the Visual Studio Marketplace.",
+      "<a href='https://niahtextfilter.com/'>Niah website</a>"
+    ]
+  },
+  {
+    "projectId": "WastelandForever",
+    "title": "Wasteland Forever",
+    "body": [
+      "One of the most influential games of my childhood was Wasteland (1988). As an homage to this classic game, I largely remade the engine in XNA. I posted a long-winded progress video which shows a complete playthrough of Highpool, all boringly narrated by me!",
+      "<iframe title='Wasteland Forever - project update' width='625' height='469' src='https://www.youtube.com/embed/1jc6sPGNoIc?feature=oembed' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+      "Once inXile announced their intentions to make Wasteland 2 and in doing so re-release the original Wasteland inside the game, I pretty much abandoned the project. But it was a lot of fun! It was written in C# and LUA."
+    ]
+  },
+  {
+    "projectId": "SidAmp",
+    "title": "SidAmp",
+    "body": [
+      "If you're old enough to remember WinAmp then you may also be old enough to fondly remember the amazing music of the Commodore 64. When WinAmp was very popular (1998), I wanted a way to play my C64 SID files through that app. Since nothing already existed, I created SidAmp with my friend Nick Kovac.",
+      "<img src='/assets/sidamp/sidamp.jpg' />",
+      "SidAmp was largely based on the fantastic work of others (specifically, the hardware emulation).",
+      "It became reasonably popular at the time, and a bunch of people created skins for it (check them out below). Also really neat was the creation of a theme tune by Hans Axelsson (TDM) of Triad.",
+      "<img src='/assets/sidamp/AZDamp3L-2.jpg' /> &nbsp; <img src='/assets/sidamp/MidnightAmp2.jpg' />",
+      "<img src='/assets/sidamp/RealitySid.jpg' /> &nbsp; <img src='/assets/sidamp/Stainless2.jpg' />",
+      "<img src='/assets/sidamp/EWS64XL.png' />"
+    ]
+  },
+  {
+    "projectId": "Cricket96",
+    "title": "Cricket 96 editors",
+    "body": [
+      "In high school (1996), my friend bought EA Sport's Cricket 96 (aka Ian Botham's Cricket). It was a fun game but we were both disappointed by the lack of real player names. So I reverse-engineered the game data and built an editor to allow a bunch of game data to be changed.",
+      "<a href='/assets/cricket96/edit420.zip'>edit420.zip</a>",
+      "One of the shortcomings of Cricket 96 (and many cricket video games, to be fair), was that bowling became very exploitable very quickly, to the point where you could easily dismiss the entire AI team for less than 10 runs total. This robbed the game of all fun, so I made another editor to account for this. Chase96 would generate a save game with a certain run target, skipping the less exciting bowling phase, and jumping straight into batting.",
+      "<a href='/assets/cricket96/chase312.zip'>chase312.zip</a>"
+    ]
+  },
+  {
+    "projectId": "Cricket97",
+    "title": "Cricket 97 editor",
+    "body": [
+      "After my work on the Cricket 96 editors, I was heavily involved in the creation of Cricket 97 editors too. Most of my work on the Cricket 97 editors was around reverse engineering the game data formats rather than creation of the tools themselves.",
+      "My editor was for DOS, and I have no idea whether it still works today, but you can download it here:",
+      "<a href='/assets/cricket97/7edit100.zip'>7edit100.zip</a>"
+    ]
+  },
+  {
+    "projectId": "Arcanum",
+    "title": "Arcanum script and dialog editors",
+    "body": [
+      "Arcanum was a steampunk isometric RPG made by some of the original Fallout developers (under their new company Troika Games) and released in 2001.",
+      "To help with modding the game, I made a couple of editors.",
+      "<img src='/assets/arcanum/DialogEditorLabel.png' />",
+      "The Arcanum Dialog Editor allows easy editing of conversations in an Arcanum mod – <a href='/assets/arcanum/DialogEditor103.7z'>DialogEditor103.7z</a>.",
+      "The Arcanum Script Editor allows easy editing of Arcanum scripts – <a href='/assets/arcanum/ScriptEditor100.7z'>ScriptEditor100.7z</a>."
+    ]
+  },
+  {
+    "projectId": "ExportFontToDoom3",
+    "title": "ExportFontToDoom3",
+    "body": [
+      "While my company (Endgame Studios) was working on a psychological horror game demo in the Doom 3 engine in 2005, we needed a way to get fonts into the engine, and the existing tools weren't cutting it. So I wrote this, and figured I may as well release it to the public too. The source code can probably be used as a general purpose exporter of fonts to textures, though I haven't looked at the source in many years now.",
+      "<a href='/assets/ExportFontToDoom3/ExportFontToDoom3-v1.02.7z'>ExportFontToDoom3-v1.02.7z</a>",
+      "<a href='/assets/ExportFontToDoom3/ExportFontToDoom3-v1.02-Source.7z'>ExportFontToDoom3-v1.02-Source.7z</a>"
+    ]
+  },
+  {
+    "projectId": "QuakeClientBot",
+    "title": "Quake client bot",
+    "body": [
+      "In college (1997), my friend and I wrote a client-side bot for Quake 1 that ran on DOS using IPX and then later on Windows using TCP/IP.",
+      "Back then, bots (and particularly client-side bots) were a fairly new idea, and it required a bit of reverse engineering network packets and game data.",
+      "To achieve more complicated navigation, I wrote a replay analyser which would analyse replays of humans navigating a map, and then the bot would be able to emulate the human's movements to navigate in complicated ways."
+    ]
+  },
+  {
+    "projectId": "UltimateFootball",
+    "title": "Ultimate Football",
+    "body": [
+      "In late high school (1996), I developed and ran a play-by-email soccer management game called Ultimate Football. It was heavily inspired by another play-by-email game called Ultra Cricket by Tim Astley.",
+      "Given that I was running the entire thing on my home Windows box, I remember having to solve some problems creatively. For example, it pre-dated being able to easily send emails, so in order to batch email out results to players, I had to write a program to hack the pending emails into the Eudora outbox. Then when I opened Eudora, it would automatically send all the emails out.",
+      "Initially, I created the game for some high school friends to play, but it quickly gained traction on the internet, and the playbase grew beyond that which I could manage. The game became a victim of its own success, and after 3 seasons over 2 years, I decided to sunset the game.",
+      "It was a shame that it went this way – players of the game had become very fond of it – even sending me snail mail from the other side of the world!",
+      "I retained some of the more famous matches that took place over its lifetime – <a href='/assets/uf/at_tig.html'>here is the output</a> of one such match."
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+---
+import Header from "../components/Header.astro";
+import Sidebar from "../components/Sidebar.astro";
+
+const variables = {
+  title: "Grant Davies",
+  header: "Hi, I'm Grant.",
+  introLines: [
+    "Thanks for stopping by.",
+    "I've been a professional software engineer since 1998, mostly working in games. Over the years I've worked across both indie and large studio environments, in roles ranging from hands-on engineering to technical leadership.",
+    "For more than a decade I ran a small indie studio in Melbourne called Endgame Studios, alongside my friend and co-founder Nick Kovac. I later joined Blizzard Entertainment, where I led StarCraft: Remastered for five years. After that, I spent four years at Xbox as the lead engineer on Age of Empires II.",
+    "This site collects a selection of personal projects I've worked on over the years. Where it makes sense, you'll find downloads such as source code or binaries.",
+    "Feel free to have a look around. If you'd like to get in touch, you can email me at <a href=\"mailto:grant.davies@gmail.com\">grant.davies@gmail.com</a> or find me on X/Twitter as <a href=\"https://x.com/GrantTheAnt\">@GrantTheAnt</a>."
+  ],
+  emailAddress: "grant.davies@gmail.com"
+};
+---
+
+
+<!DOCTYPE html>
+<html
+>
+  <Header title={variables.title} />
+  <body>
+    <div class="content">
+      <Sidebar selectedItem="home" />
+      <nav class="main">
+        <div class="container">
+          <main class="fold-content-container">
+            <div class="fold-content">
+              <h1>{variables.header}</h1>
+              {variables.introLines.map(line => <p class="lead" set:html={line} /><br />)}
+            </div>
+            <a href={"mailto:" + variables.emailAddress} class="button w-button">Contact</a>
+          </main>
+        </div>
+      </nav>
+    </div>
+
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  </body>
+</html>

@@ -1,0 +1,67 @@
+---
+import projects from '../../config/config-projects.json';
+
+const { selectedItem } = Astro.props;
+const profile = {
+  name: "Grant Davies",
+  role: "Software engineer"
+};
+---
+
+<aside
+  data-animation="default"
+  data-collapse="medium"
+  data-duration="400"
+  data-easing="ease"
+  data-easing2="ease"
+  role="banner"
+  class="sidebar w-nav"
+>
+  <div class="nav-content">
+
+    <!-- Profile section -->
+    <a href="/" class="w-nav-brand" aria-label="home">
+      <div class="niv-data">
+        <img src="/assets/profile.png" loading="eager" alt="Profile picture" class="niv-image" />
+        <div>
+          <div class="label-white">{profile.name}</div>
+          <div class="label-gray">{profile.role}</div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Sidebar menu -->
+    <nav role="navigation" class="w-nav-menu">
+      <a href="/" class={`nav-link-container w-inline-block ${selectedItem === 'home' ? 'w--current' : ''}`}>
+        <img src="/assets/home.svg" loading="eager" alt="" class="nav-link-image" />
+        <div>Home</div>
+      </a>
+
+      {projects.map(project => 
+        <a href={"/projects/" + project.projectId} class={`nav-link-container w-inline-block ${selectedItem === project.projectId ? 'w--current' : ''}`}>
+          <img src="/assets/dns.svg" loading="eager" alt="" class="nav-link-image" />
+          <div>{project.title}</div>
+        </a>
+      )}
+
+    </nav>
+
+    <div class="navbar-icon-button w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0">
+      <img src="/assets/menu.svg" loading="eager" alt="" class="navbar-icon" />
+    </div>
+  </div>
+
+  <script>
+    import { setupNav } from '../scripts/nav.js';
+    
+    let cleanup;
+    document.addEventListener('astro:page-load', () => {
+      if (cleanup) cleanup();
+      cleanup = setupNav();
+    });
+
+    document.addEventListener('astro:before-swap', () => {
+      if (cleanup) cleanup();
+    });
+  </script>
+</aside>

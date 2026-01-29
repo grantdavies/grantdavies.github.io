@@ -1,0 +1,53 @@
+---
+import Header from '../../components/Header.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import projects from '../../../config/config-projects.json';
+
+export function getStaticPaths() {
+  return projects.map(project => ({
+    params: { projectId: project.projectId }
+  }));
+}
+
+const { projectId } = Astro.params;
+
+const project = projects.find(p => p.projectId === projectId);
+const page = {
+  title: project.title + ' | Grant Davies',
+  header: project.title
+}
+---
+
+<!DOCTYPE html>
+<html>
+  <Header title={page.title} />
+  <body>
+    <div class="content">
+        <Sidebar selectedItem={project.projectId} />
+      <nav class="main">
+        <div class="container">
+          <div class="back-nav-container">
+            <a href="/" class="back-nav-button w-inline-block">
+              <img src="/assets/back.svg" loading="lazy" alt="" class="back-nav-img" />
+              <div>Back</div>
+            </a>
+          </div>
+          <div class="content-container">
+            <h1>{page.header}</h1>
+            <section class="items-container">
+              <div class="resouce-items">
+                <div class="single-item">
+                  <div class="project-desc project-desc-list w-richtext">
+                    {project.body.map(line => <p class="lead" set:html={line} /><br />)}
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  </body>
+</html>
